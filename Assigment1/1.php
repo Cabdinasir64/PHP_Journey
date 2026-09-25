@@ -2,41 +2,35 @@
 <html>
 
 <head>
-    <title>largest and smallest</title>
+    <title>Question 1</title>
 </head>
 
 <body>
+
     <?php
+    $num1 = 15;
+    $num2 = 25;
+    $num3 = 10;
 
-    $num1 = 5;
-    $num2 = 3;
-    $num3 = 9;
-
-    if ($num1 > $num2 && $num1 > $num3) {
-        $largest = $num1;
-    } elseif ($num2 > $num1 && $num2 > $num3) {
-        $largest = $num2;
+    if ($num1 >= $num2 && $num1 >= $num3) {
+        $greatest = $num1;
+    } elseif ($num2 >= $num1 && $num2 >= $num3) {
+        $greatest = $num2;
     } else {
-        $largest = $num3;
-
+        $greatest = $num3;
     }
 
-    if ($num1 < $num2 && $num1 < $num3) {
+    if ($num1 <= $num2 && $num1 <= $num3) {
         $smallest = $num1;
-    } elseif ($num2 < $num1 && $num2 < $num3) {
+    } elseif ($num2 <= $num1 && $num2 <= $num3) {
         $smallest = $num2;
     } else {
         $smallest = $num3;
     }
 
-    echo "Largest numbers is $largest". "<br>";
-    echo "Smallest numbers is $smallest";
-
-
-
-
+    echo "The greatest number is: " . $greatest . "<br>";
+    echo "The smallest number is: " . $smallest;
     ?>
-
 
 </body>
 
