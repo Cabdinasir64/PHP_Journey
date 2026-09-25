@@ -2,28 +2,23 @@
 <html>
 
 <head>
-    <title>Odd and Even</title>
+    <title>Question 3</title>
 </head>
 
 <body>
+
     <?php
-
-    for ($i = 1; $i <= 20; $i++) {
-        if ($i % 2 === 0) {
-            echo "$i,";
+    for ($i = 2; $i <= 20; $i++) {
+        if ($i % 2 == 0) {
+            echo $i . " ";
         }
     }
-    echo "<br>";
-    for ($i = 7; $i <= 35; $i++) {
+    for ($i = 35; $i >= 7; $i--) {
         if ($i % 2 != 0) {
-            echo "$i,";
+            echo $i . " ";
         }
     }
-
-
-
     ?>
-
 
 </body>
 
