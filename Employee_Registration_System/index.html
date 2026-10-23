@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employee_Registration_System</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 30px;">
+
+    <div style="display: flex; gap: 30px; justify-content: center; align-items: flex-start;">
+        <div
+            style="background-color: #ffffff; padding: 20px; border: 1px solid #ccc; border-radius: 8px; width: 350px;">
+            <form action="process.php" method="post">
+                <label style="display: block; margin-top: 10px; font-weight: bold;">Employee Full Name:</label>
+                <input type="text" name="fullname"
+                    style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+
+                <label style="display: block; margin-top: 10px; font-weight: bold;">Employee ID:</label>
+                <input type="text" name="ID"
+                    style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+
+                <label style="display: block; margin-top: 12px; font-weight: bold;">Gender</label>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> female<br>
+
+                <label style="display: block; margin-top: 12px; font-weight: bold;">Department</label>
+                <select name="department[]"
+                    style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; height: 90px;">
+                    <option value="Human_Resources">Human Resources</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Information_Technology">Information
+                        Technology</option>
+                    <option value="Administration">Administration</option>
+                </select>
+
+                <label style="display: block; margin-top: 12px; font-weight: bold;">Employment Type</label>
+                <input type="radio" name="Employment_Type" value="full_time"> Full time<br>
+                <input type="radio" name="Employment_Type" value="part_time"> Part Time<br>
+
+                <label style="display: block; margin-top: 10px; font-weight: bold;">Basic Salary:</label>
+                <input type="number" name="basic_salary"
+                    style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+
+                <label style="display: block; margin-top: 10px; font-weight: bold;">Allowance:</label>
+                <input type="number" name="Allowance"
+                    style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+
+                <label style="display: block; margin-top: 10px; font-weight: bold;">Deduction:</label>
+                <input type="number" name="Deduction"
+                    style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+
+                <label style="display: block; margin-top: 10px; font-weight: bold;">Years of Service:</label>
+                <input type="number" name="Years_of_Service"
+                    style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+
+                <label style="display: block; margin-top: 10px; font-weight: bold;">Employee Document:</label>
+                <input type="file" enctype="multipart/form-data". name="EmployeeDocument"
+                    style="width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+               
+                    <div style="margin-top: 15px;">
+                    <input type="submit" name="submit" value="Register"
+                        style="background-color: #28a745; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;">
+                    <input type="reset" value="Reset"
+                        style="background-color: #dc3545; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; margin-left: 5px;">
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
